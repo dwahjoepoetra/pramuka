@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluasi Kegiatan Pramuka Penegak dan Pandega Kalimantan Timur 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Evaluasi Kegiatan Pramuka Penegak dan Pandega Kalimantan Timur 2024</h1>
+        <p>Formulir ini bertujuan untuk mengumpulkan data primer sebagai bahan SIDPARDA Kaltim 2025. Mohon isi dengan jujur dan teliti.</p>
+        <form id="evaluationForm">
+            <h2>Data Diri</h2>
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="pangkalan">Pangkalan:</label>
+                <input type="text" id="pangkalan" name="pangkalan" required>
+            </div>
+            <div class="form-group">
+                <label for="golongan">Golongan:</label>
+                <select id="golongan" name="golongan" required>
+                    <option value="">Pilih Golongan</option>
+                    <option value="Penegak">Penegak</option>
+                    <option value="Pandega">Pandega</option>
+                </select>
+            </div>
+
+            <h2>Evaluasi Kegiatan Umum</h2>
+            <div class="question-group">
+                <h3>1.  Partisipasi dalam Kegiatan</h3>
+                <p>Seberapa aktif Anda berpartisipasi dalam kegiatan Pramuka selama tahun 2024?</p>
+                <div class="radio-group">
+                    <input type="radio" id="partisipasi1" name="partisipasi" value="Sangat Aktif" required>
+                    <label for="partisipasi1">Sangat Aktif</label><br>
+                    <input type="radio" id="partisipasi2" name="partisipasi" value="Aktif">
+                    <label for="partisipasi2">Aktif</label><br>
+                    <input type="radio" id="partisipasi3" name="partisipasi" value="Cukup Aktif">
+                    <label for="partisipasi3">Cukup Aktif</label><br>
+                    <input type="radio" id="partisipasi4" name="partisipasi" value="Kurang Aktif">
+                    <label for="partisipasi4">Kurang Aktif</label><br>
+                    <input type="radio" id="partisipasi5" name="partisipasi" value="Tidak Aktif">
+                    <label for="partisipasi5">Tidak Aktif</label>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <h3>2. Manfaat Kegiatan</h3>
+                <p>Menurut Anda, seberapa besar manfaat yang Anda peroleh dari kegiatan Pramuka selama tahun 2024?</p>
+                <div class="rating">
+                    <input type="radio" id="manfaat1" name="manfaat" value="5" required>
+                    <label for="manfaat1">5 (Sangat Bermanfaat)</label>
+                    <input type="radio" id="manfaat2" name="manfaat" value="4">
+                    <label for="manfaat2">4</label>
+                    <input type="radio" id="manfaat3" name="manfaat" value="3">
+                    <label for="manfaat3">3</label>
+                    <input type="radio" id="manfaat4" name="manfaat" value="2">
+                    <label for="manfaat4">2</label>
+                    <input type="radio" id="manfaat5" name="manfaat" value="1">
+                    <label for="manfaat5">1 (Tidak Bermanfaat)</label>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <h3>3.  Kendala dalam Kegiatan</h3>
+                <p>Apa saja kendala yang Anda hadapi selama mengikuti kegiatan Pramuka tahun 2024? (Jawaban boleh lebih dari satu)</p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="kendala1" name="kendala[]" value="Waktu">
+                    <label for="kendala1">Waktu</label><br>
+                    <input type="checkbox" id="kendala2" name="kendala[]" value="Biaya">
+                    <label for="kendala2">Biaya</label><br>
+                    <input type="checkbox" id="kendala3" name="kendala[]" value="Jarak">
+                    <label for="kendala3">Jarak</label><br>
+                    <input type="checkbox" id="kendala4" name="kendala[]" value="Fasilitas">
+                    <label for="kendala4">Fasilitas</label><br>
+                    <input type="checkbox" id="kendala5" name="kendala[]" value="Lainnya">
+                    <label for="kendala5">Lainnya:</label>
+                    <input type="text" id="kendalaLainnya" name="kendalaLainnya">
+                </div>
+            </div>
+
+            <div class="question-group">
+                <h3>4.  Saran dan Masukan</h3>
+                <p>Berikan saran dan masukan Anda untuk peningkatan kegiatan Pramuka di Kalimantan Timur.</p>
+                <textarea id="saran" name="saran" rows="5"></textarea>
+            </div>
+
+            <h2>Evaluasi Perkemahan/Pelatihan</h2>
+            <div class="question-group">
+                <h3>5.  Penilaian Kegiatan</h3>
+                <p>Bagaimana penilaian Anda terhadap kegiatan perkemahan/pelatihan yang Anda ikuti?</p>
+                <div class="slider-group">
+                    <label for="penilaianKegiatan">Penilaian (1-10):</label>
+                    <input type="range" id="penilaianKegiatan" name="penilaianKegiatan" min="1" max="10" value="5">
+                    <span id="nilaiKegiatan">5</span>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <h3>6.  Sarana dan Prasarana</h3>
+                <p>Bagaimana penilaian Anda terhadap sarana dan prasarana yang disediakan selama perkemahan/pelatihan?</p>
+                <div class="radio-group">
+                    <input type="radio" id="sarpras1" name="sarpras" value="Sangat Baik" required>
+                    <label for="sarpras1">Sangat Baik</label><br>
+                    <input type="radio" id="sarpras2" name="sarpras" value="Baik">
+                    <label for="sarpras2">Baik</label><br>
+                    <input type="radio" id="sarpras3" name="sarpras" value="Cukup">
+                    <label for="sarpras3">Cukup</label><br>
+                    <input type="radio" id="sarpras4" name="sarpras" value="Kurang">
+                    <label for="sarpras4">Kurang</label><br>
+                    <input type="radio" id="sarpras5" name="sarpras" value="Sangat Kurang">
+                    <label for="sarpras5">Sangat Kurang</label>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <h3>7.  Kepanitiaan</h3>
+                <p>Bagaimana penilaian Anda terhadap kinerja kepanitiaan dalam perkemahan/pelatihan?</p>
+                <div class="emoji-group">
+                    <input type="radio" id="kepanitiaan1" name="kepanitiaan" value="Sangat Puas" required>
+                    <label for="kepanitiaan1">&#128513; Sangat Puas</label><br>
+                    <input type="radio" id="kepanitiaan2" name="kepanitiaan" value="Puas">
+                    <label for="kepanitiaan2">&#128512; Puas</label><br>
+                    <input type="radio" id="kepanitiaan3" name="kepanitiaan" value="Netral">
+                    <label for="kepanitiaan3">&#128528; Netral</label><br>
+                    <input type="radio" id="kepanitiaan4" name="kepanitiaan" value="Kurang Puas">
+                    <label for="kepanitiaan4">&#128530; Kurang Puas</label><br>
+                    <input type="radio" id="kepanitiaan5" name="kepanitiaan" value="Tidak Puas">
+                    <label for="kepanitiaan5">&#128545; Tidak Puas</label>
+                </div>
+            </div>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
